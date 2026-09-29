@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PocketSmart - Register</title>
+<style>
+ body { font-family: Arial; background: #f8faff; display:flex; justify-content:center; align-items:center; height:100vh; }
+ .card { background:white; padding:40px; border-radius:15px; box-shadow:0 5px 15px #ddd; width:350px; text-align:center; }
+ .logo { color:#2563eb; font-size:32px; font-weight:bold; }
+ input { width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:8px; }
+ button { width:100%; padding:12px; background:#2563eb; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="card">
+ <div class="logo">PocketSmart</div>
+ <p>AI-Powered Budget Planning</p>
+ <h2>Create Your Account</h2>
+ <form method="post" action="/register">
+  <input type="text" name="username" placeholder="Choose a username" required>
+  <input type="email" name="email" placeholder="Enter email" required>
+  <input type="password" name="password" placeholder="Create password" required>
+  <button type="submit">Register</button>
+ </form>
+ <p><a href="/login">Already have account? Login</a></p>
+</div>
+</body>
+</html>
